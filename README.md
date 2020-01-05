@@ -20,4 +20,15 @@ Personally I do it everytime using Putty:
   - source: 8000, destination: localhost:8888
   - source: 8001, destination: localhost:8080
   
- 
+## Apache Spark configuration
+
+When in ubuntu terminal type following command:
+'''
+$ wget http://ftp.man.poznan.pl/apache/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz
+'''
+then unpack the file using tar xvzf file-name command.
+Then install Java and Scala:
+'''
+$ sudo apt-get -y install openjdk-8-jdk-headless
+$ sudo apt-get install scala
+'''
