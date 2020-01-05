@@ -71,3 +71,10 @@ https://public-dns-of-your-ec2-machine:8888/
 ## Running Spark cluster
 
 ![](https://raw.githubusercontent.com/Velociraptorvelraptor/AWS-EC2-instances-Spark-cluster-configuration-with-Jupyter/master/spark_master_panel.jpg)
+
+Start master and slave nodes by running following commands. 
+Starting slave node needs pasting spark master url at the end of the line.
+```
+$ bash/spark-2.4.4-bin-hadoop2.7/sbin/start-master.sh 
+$ bash/spark-2.4.4-bin-hadoop2.7/sbin/start-slave.sh spark://ip.[...].ec2.internal:7077
+```
