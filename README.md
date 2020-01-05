@@ -32,3 +32,37 @@ Then install Java and Scala:
 $ sudo apt-get -y install openjdk-8-jdk-headless
 $ sudo apt-get install scala
 ```
+
+## Jupyter installation
+
+Download latest version of Anaconda and use bash command to run installation script.
+```
+$ wget http://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh
+$ bash Anaconda3–4.1.1-Linux-x86_64.sh
+```
+Jupyter certifiation configuration using below commands and answering several questions:
+```
+$ jupyter notebook --generate-config
+$ mkdir certs
+$ cd certs
+$ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+```
+Last step is to configure the jupyter notebook, go to the jupyter_notebook_config.py and use vim editor.
+```
+$ cd ~/.jupyter/
+$ vim jupyter_notebook_config.py
+```
+At ther very beggining of the file paste the following script:
+```
+c = get_config()
+c.NotebookApp.certfile = u'/home/ubuntu/certs/mycert.pem' 
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False 
+c.NotebookApp.port = 8888
+```
+Run jupyter notebook simply by using command:
+```
+$ jupyter notebook
+```
+Jupyter panel is now available by entering following address in the browser:
+https://public-dns-of-your-ec2-machine:8888/
