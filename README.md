@@ -78,6 +78,6 @@ $ bash/spark-2.4.4-bin-hadoop2.7/sbin/start-slave.sh spark://ip.[...].ec2.intern
 ```
 The spark master panel is available using localhost:8001 in the browser.
 
-![]()
+![](https://github.com/Velociraptorvelraptor/AWS-EC2-instances-Spark-cluster-configuration-with-Jupyter/blob/master/spark_panel.jpg?raw=true)
 
 In order to stop nodes execute recent commans with changing 'start' to 'stop' in the command line.
