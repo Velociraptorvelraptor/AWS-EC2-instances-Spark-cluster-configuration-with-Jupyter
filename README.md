@@ -13,7 +13,7 @@
 
 After succesfull initialazing EC2 instances one need to connect to them through SSH.
 Personally I do it everytime using Putty:
-- Host name: ubuntu@<your-public-DNS-of-an-instance>
+- Host name: ubuntu@public-DNS-of-you-ec2-machine
 - Remember of generating a private key (you can use PuttyGen to generate a private key from a public one)
   and loading it in section (Connection -> SSH -> Auth -> Private key file ...)
 - Set tunneling (Connection -> SSH -> Tunnels): 
