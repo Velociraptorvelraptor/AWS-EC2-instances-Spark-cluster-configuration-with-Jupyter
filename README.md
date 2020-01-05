@@ -3,11 +3,13 @@
 ## Initialazing EC2 instances at Amazon Web Services
 
 1. Set up two EC2 Ubuntu (16.04 or 18.04) instances with all default settings (note: 1CPU 1GB t2.micro is a free trial).
+![](https://github.com/Velociraptorvelraptor/AWS-EC2-instances-Spark-cluster-configuration-with-Jupyter/blob/master/instances.jpg?raw=true)
 2. Generate new or use already existing public key
 3. After succesfull initialazing one need to configure Security Groups (go to NETWORK&SECURITY) and add new or edit already existing rule.
    - SSH, port: 22, source: anywhere
    - HTTPS, port: default, source: anywhere
    - TCP, port: 8888, source: anywhere
+
 
 ## Connecting to the instances through SSH
 
