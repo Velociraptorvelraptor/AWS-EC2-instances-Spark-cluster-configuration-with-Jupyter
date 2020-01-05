@@ -70,4 +70,4 @@ https://public-dns-of-your-ec2-machine:8888/
 ```
 ## Running Spark cluster
 
-(https://raw.githubusercontent.com/Velociraptorvelraptor/AWS-EC2-instances-Spark-cluster-configuration-with-Jupyter/master/spark_master_panel.jpg)
+![](https://raw.githubusercontent.com/Velociraptorvelraptor/AWS-EC2-instances-Spark-cluster-configuration-with-Jupyter/master/spark_master_panel.jpg)
