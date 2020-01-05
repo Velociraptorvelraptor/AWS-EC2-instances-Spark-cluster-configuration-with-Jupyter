@@ -65,4 +65,6 @@ Run jupyter notebook simply by using command:
 $ jupyter notebook
 ```
 Jupyter panel is now available by entering following address in the browser:
+```
 https://public-dns-of-your-ec2-machine:8888/
+```
